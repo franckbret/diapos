@@ -1,0 +1,105 @@
+@import url(http://fonts.googleapis.com/css?family=Kalam:700);
+/*
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(http://fonts.googleapis.com/css?family=Khand:600);
+*/
+
+body{
+  font-size:1.6em;
+  font-family: "Ubuntu Medium", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  background: #466368;
+  background: linear-gradient(to right bottom, #666, #efefef);
+  color:#444;
+  text-align:center;
+}
+
+.step{
+  width:1024px;
+  background:#efefef;
+  padding: 1rem;
+  box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.4);
+
+  border-radius : 20px 0px 20px 0px;
+}
+
+h1, h2, h3{
+  /* font-family: 'Khand', sans-serif; */
+  font-family: 'Kalam', serif;
+  text-align:center;
+  text-shadow: 1px 1px #fff, -1px -1px #444;
+}
+
+h1{
+  color:#222;
+  display:block;
+  width:100%;
+  margin:0;
+
+}
+
+h1:after{
+  display:block;
+  content:"";
+  border-top:1px solid rgba(0, 0, 0, 0.3);
+  width:100%;
+  height:6px;
+  background: radial-gradient(ellipse at 50% -100%,  rgba(0,0,0,0.6) 0,rgba(255,255,255,0) 100%); /* W3C */
+}
+
+p{
+  text-align:left;
+}
+pre{
+  text-align:left;
+  padding: 1rem;
+  border: dashed 1px #333;
+  font-size: 0.8em;
+  font-family: "Ubuntu Mono", monospace;
+  background-color:#fff;
+
+}
+ul{
+  text-align:left;
+}
+
+li{
+  padding: 0.5rem;
+}
+
+a {
+}
+
+img{
+  border: solid 4px #fff;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } /* Don't show links for images, or javascript/internal links */
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+
+  /* Impress.js specific */
+  .fallback-message { display: none; }
+  @page land {size: landscape;}
+  .step { page-break-inside: avoid; page-break-after: always; border: none; margin-top: 100px; }
+  .step img { max-height: 100%; }
+
+  /* plus some more step specific styles of your own
+  #htop2 { display: none }
+   */
+}
